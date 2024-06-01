@@ -37,6 +37,12 @@ export const addWordlist = (name, list) => {
     if (list.length !== 2048) {
       throw new Error('Тhere should be 2048 words in the list')
     }
+    if (!Array.isArray(list)) {
+      throw new Error('The list must be an array of strings')
+    }
+    if (!list.every((item) => typeof item === 'string')) {
+      throw new Error('There are items in the list that are not a string')
+    }
     wordlists[name] = list
   } catch (err) {
     console.error(err)
