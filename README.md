@@ -1,4 +1,4 @@
-# @yat/ladger
+# @yat/ledger
 
 Names of word lists included in the library:  
 czech  
