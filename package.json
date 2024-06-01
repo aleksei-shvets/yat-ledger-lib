@@ -1,5 +1,5 @@
 {
-  "name": "@yat/ledger",
+  "name": "yat-ledger-lib",
   "version": "1.0.0",
   "description": "wallet generation (mnemonic phrase / public key / secret key)",
   "main": "index.js",
