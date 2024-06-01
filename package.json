@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleksei-shvets/yat_ladger.git"
+    "url": "git+https://github.com/aleksei-shvets/yat_ledger.git"
   },
   "author": "aleksei-shvets",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aleksei-shvets/yat_ladger/issues"
+    "url": "https://github.com/aleksei-shvets/yat_ledger/issues"
   },
-  "homepage": "https://github.com/aleksei-shvets/yat_ladger#readme",
+  "homepage": "https://github.com/aleksei-shvets/yat_ledger#readme",
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
