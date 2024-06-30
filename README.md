@@ -2,14 +2,17 @@
 
 The library generates a "yat - wallet" entity with a zero balance.
 
-#### genLedger()
+### genLedger()
 
-The wallet generation function genLedger(wordlistName, userPassword) takes two parameters:
-wordlistName: string - the name of the word list from which the mnemonic phrase is generated;
-userPassword: string - user password for the wallet. If the password is not passed in the function parameters, it will be generated automatically and returned in the passWd parameter.
-Attention! The library does not perform validation of the passed password in userPassword, validation should be performed before passing it to the function parameters.
+The wallet generation function genLedger(wordlistName, userPassword) takes two parameters:  
+**wordlistName: string** - the name of the word list from which the mnemonic phrase is generated;  
+**userPassword: string** - user password for the wallet. If the password is not passed in the function parameters, it will be generated automatically and returned in the passWd parameter.  
+
+Attention! The library does not perform validation of the passed password in userPassword, validation should be performed before passing it to the function parameters.  
 
 The function returns an object of the following content:
+
+```
  {
 publicKey: string,
 secretKey: Uint8Array(64),
@@ -17,14 +20,17 @@ userCrypt: string,
 mnemonicPhrase: string,
 passWd: string,
 balance: number,
-}.
+}
+```
 
 Example.
 
 ```
 genLedger('russian', 'ergwe654erv')
 
-returned => {
+// returns =>
+
+{
   publicKey: 'rccKoVjo8VbcZn8T1coM4tbQtzyHxSHL5aqJqZTErk1',
   secretKey: Uint8Array(64) [
     126,  48, 102,  10, 174,  68, 239,  27,  14, 103, 177,
@@ -41,7 +47,7 @@ returned => {
 }
 ```
 
-#### addWordlist()
+### addWordlist()
 
 The library includes word lists for 12 languages. The names of the word lists correspond to the names of the languages.
 
@@ -68,7 +74,7 @@ There can be any number of word lists for each language, but the name of each li
 Example.
 
 ```
-const myList = ['show', 'apple', 'run', ..., 'airplane'] // myList.length = 2048 
+const myList = ['show', 'apple', 'runer', ..., 'airplane'] // myList.length = 2048 
 
 addWordlist('myEngList', myList)
 
