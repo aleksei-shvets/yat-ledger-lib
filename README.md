@@ -2,6 +2,12 @@
 
 The library generates a "yat - wallet" entity with a zero balance.
 
+### install  
+
+```
+npm i yat-ledger-lib
+```
+
 ### genLedger()
 
 The wallet generation function genLedger(wordlistName, userPassword) takes two parameters:  
