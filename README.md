@@ -1,10 +1,13 @@
 # yat-ledger-lib  
 [![NPM](https://nodei.co/npm/yat-ledger-lib.png?compact=true)](https://npmjs.org/package/yat-ledger-lib)
-#
+
+&nbsp;
+&nbsp;
 
 The library generates a "yat - wallet" entity with a zero balance.
 
-
+&nbsp;
+&nbsp;
 
 ### install  
 
@@ -23,15 +26,18 @@ Attention! The library does not perform validation of the passed password in use
 The function returns an object of the following content:
 
 ```
- {
-publicKey: string,
-secretKey: Uint8Array(64),
-userCrypt: string,
-mnemonicPhrase: string,
-passWd: string,
-balance: number,
+{
+  publicKey: string,
+  secretKey: Uint8Array(64),
+  userCrypt: string,
+  mnemonicPhrase: string,
+  passWd: string,
+  balance: number,
 }
 ```
+
+&nbsp;
+&nbsp;
 
 ***Example***
 
@@ -56,7 +62,8 @@ genLedger('russian', 'ergwe654erv')
   balance: 0
 }
 ```
-
+&nbsp;
+&nbsp;
 ### addWordlist()
 
 The library includes word lists for 12 languages. The names of the word lists correspond to the names of the languages.
@@ -80,6 +87,9 @@ name: string - the name of the word list, through which the word list is accesse
 list: string[] - word list, must contain 2048 words.
 
 There can be any number of word lists for each language, but the name of each list must be unique.  
+
+&nbsp;
+&nbsp;
 
 ***Example***
 
