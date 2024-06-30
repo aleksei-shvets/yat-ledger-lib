@@ -33,7 +33,7 @@ balance: number,
 }
 ```
 
-Example.
+***Example***
 
 ```
 genLedger('russian', 'ergwe654erv')
@@ -81,7 +81,7 @@ list: string[] - word list, must contain 2048 words.
 
 There can be any number of word lists for each language, but the name of each list must be unique.  
 
-Example.
+***Example***
 
 ```
 const myList = ['show', 'apple', 'runer', ..., 'airplane'] // myList.length = 2048 
