@@ -1,6 +1,10 @@
-# yat-ledger-lib
+# yat-ledger-lib  
+[![NPM](https://nodei.co/npm/yat-ledger-lib.png?compact=true)](https://npmjs.org/package/yat-ledger-lib)
+#
 
 The library generates a "yat - wallet" entity with a zero balance.
+
+
 
 ### install  
 
