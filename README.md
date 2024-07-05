@@ -14,6 +14,9 @@ The library generates a "yat - wallet" entity with a zero balance.
 ```
 npm i yat-ledger-lib
 ```
+The library provides two functions:   
+1) wallet generation function - **genLedger()**  
+2) function to add a list of words - **addWordlist()**      
 
 ### genLedger()
 
